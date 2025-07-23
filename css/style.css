@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Open Sans, sans-serif;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block-1 p, .block-2 p {
+  padding: 2% 5%;
+  font-size: 12px;
+}
+.block-1 p:first-child, .block-2 p:first-child {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 2% 0;
+}
+.header .header_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40px;
+  height: 22px;
+  margin: 0 auto;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+.header .header_button::after {
+  content: "";
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: block;
+  margin: auto 0;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+}
+
+.block-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.block-1-image {
+  position: relative;
+  width: 50%;
+  z-index: -1;
+}
+
+.block-1-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.block-1-text p {
+  text-align: right;
+}
+.block-1-text span {
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .block-1-text span {
+    font-size: 18px;
+  }
+}
+.block-2 {
+  position: relative;
+  padding: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.block-2-text {
+  width: 50%;
+}
+
+.block-2-image {
+  position: relative;
+  width: 50%;
+}
+
+.block-2-content {
+  width: 70%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 0;
+  margin-bottom: 5%;
+}
+
+.block-2-items {
+  background-color: black;
+  margin: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1% 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.block-2-items .block-2-card {
+  padding: 0 2%;
+}
+
+.block-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100vh;
+  padding: 0 2%;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(orange), to(black));
+  background: linear-gradient(black, orange, black);
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, black), color-stop(30%, orange), color-stop(70%, black));
+  background: linear-gradient(to right, black 30%, orange 30% 70%, black 70%);
+}
+
+.block-3-text {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 40px;
+  margin-right: 35%;
+  text-align: right;
+}
+
+.block-3-text span:first-child {
+  font-size: 20px;
+}
+
+.block-3-conteiner {
+  display: -ms-grid;
+  display: grid;
+  margin: 5%;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 3% 1fr 3% 1fr;
+      grid-template: 1fr/repeat(3, 1fr);
+  grid-gap: 3%;
+  height: 50%;
+}
+
+.block-3-item {
+  position: relative;
+  font-size: 20px;
+}
+
+.block-3-item:last-child {
+  margin: auto 0;
+  text-align: right;
+}
+
+.block-4-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin: 5% 7%;
+}
+
+.block-4-column {
+  width: 33.333333%;
+}
+
+.block-4-column:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-text {
+  text-transform: uppercase;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 25px;
+  letter-spacing: 150%;
+}
+
+.column-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+.column-title p:last-child {
+  text-transform: none;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+
+.block-5 {
+  min-height: 80vh;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: linear;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, black), color-stop(20%, orange), color-stop(80%, black));
+  background: linear-gradient(to right, black 20%, orange 20% 80%, black 80%);
+}
+
+.block-5-column {
+  width: 50%;
+  margin: 0 2%;
+}
+.block-5-column p:first-child {
+  font-weight: 900;
+  font-size: 40px;
+}
+.block-5-column p {
+  margin: 5% 0;
+  text-align: right;
+}
+
+.block-5-column:first-child {
+  position: relative;
+}
+
+.block-6 {
+  padding: 5% 2%;
+}
+
+.block-6-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.block-6-column {
+  width: 50%;
+  margin: 0 2%;
+}
+
+.column-image-6 {
+  position: relative;
+  padding: 0 2%;
+  height: 60%;
+}
+
+.column-title-6 {
+  height: 40%;
+}
+.column-title-6 p:first-child {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 3%;
+}
+
+.column-item {
+  position: relative;
+  width: 100%;
+  height: 44%;
+  padding: 4% 0;
+}
+.column-item #four {
+  width: 60%;
+  height: 80%;
+}
+
+.column-item:first-child #second {
+  width: 48%;
+  height: 80%;
+  bottom: 0;
+}
+.column-item:first-child #three {
+  width: 48%;
+  height: 60%;
+  right: 0;
+  bottom: 0;
+}
+
+.block-7 {
+  padding: 2% 5%;
+  background: linear;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, black), color-stop(20%, orange), color-stop(80%, black));
+  background: linear-gradient(to right, black 20%, orange 20% 80%, black 80%);
+}
+
+.block-7-conteiner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.block-7-title {
+  padding: 5% 0;
+  text-align: center;
+}
+.block-7-title p:first-child {
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.block-7-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block-7-column {
+  margin: 1%;
+  padding: 3%;
+  background-color: black;
+}
